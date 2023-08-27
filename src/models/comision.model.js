@@ -7,6 +7,11 @@ const comisionSchema = new mongoose.Schema(
       ref: 'Asesor',
       required: true
     },
+    idVenta: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Venta',
+      required: true
+    },
     mes: {
       type: Number,
       required: true
