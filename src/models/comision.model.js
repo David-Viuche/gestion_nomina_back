@@ -7,11 +7,11 @@ const comisionSchema = new mongoose.Schema(
       ref: 'Asesor',
       required: true
     },
-    fechaCalculo: {
-      type: Date,
+    mes: {
+      type: Number,
       required: true
     },
-    metaAlcanzada: {
+    anio: {
       type: Number,
       required: true
     },
