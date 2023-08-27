@@ -7,8 +7,12 @@ const ventaSchema = new mongoose.Schema(
       ref: 'Asesor',
       required: true
     },
-    fechaVenta: {
-      type: Date,
+    mes: {
+      type: Number,
+      required: true
+    },
+    anio: {
+      type: Number,
       required: true
     },
     montoVenta: {
