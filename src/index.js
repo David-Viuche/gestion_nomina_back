@@ -3,6 +3,8 @@ import { connectDB } from './db.js'
 
 connectDB()
 
-app.listen(3005)
+app.set('port', process.env.PORT || 3005)
 
-console.log('Server on port ', 3005)
+app.listen(app.get('port'), () => {
+  console.log('server on port', app.get('port'))
+})
