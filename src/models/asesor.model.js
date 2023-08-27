@@ -7,13 +7,9 @@ const asesorSchema = new mongoose.Schema(
       required: true,
       trim: true
     },
-    nivel: {
-      type: String,
-      required: true,
-      enum: ['J', 'S', 'M']
-    },
-    salarioBase: {
-      type: Number,
+    idNivel: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Nivel',
       required: true
     }
   },
